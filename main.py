@@ -18,11 +18,17 @@ player_two_ship_coordinates = []
 player_one_bomb_attempts = []
 player_two_bomb_attempts = []
 
-print("Welcome to Battleships on python terminal! ")
-print("Do you have what it takes to defeat your opponent? ")
-print("The rules are simple: ")
-print()
+def initialise_board():
+    return[["~"] * 12 for _ in range(8)]
 
+def Instructions():
+
+    print("Welcome to Battleships on python terminal! ")
+    print("Do you have what it takes to defeat your opponent? ")
+    print("The rules are simple: ")
+    print("Sink your opponents ships before they sink yours.")
+
+def selection_ships(board):
 
 # terminal
 #>>> 
