@@ -37,18 +37,9 @@ def show_instructions():
     print("If you have hit a part of your opponent's ship. The coordinate will display a yellow colour.")
     print("If you have sunk your opponent's ship, then the ship’s coordinates will be displayed in a red colour. ")
     print("")
-    print("If you have missed completely, then the coordinates will display a blue colour.")
-    print("The game is over when you or your opponent have no more ships floating.")
-    print("If you would like to play again, then there will be an option to at the end.")
-    print("That is all from me so happy battles! ")
+    print("")
+    print("")
 
-board = ""
-def select_ships(board):
-    pass
-
-
-def display_board(board):
-    pass
 
 
 # terminal
