@@ -87,3 +87,4 @@ if __main__ == "__name__":
 
         # step 4
         winner = check_if_boats_remain(board)
+        print("hello")
