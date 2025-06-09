@@ -66,7 +66,8 @@ def display_board(board):
 #>>> print("isher johal".rjust(50, "X"))
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXisher johal
 
-
+def check_if_hit():
+    pass
 
 if __main__ == "__name__":
     # setup
