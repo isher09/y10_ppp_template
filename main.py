@@ -48,7 +48,14 @@ def show_instructions():
 board = ""
 def select_ships(board):
     valid_selection_ships = []
-    ship_selection_for_player_one
+    p1_selection = False
+    while p1_selection == False:
+        selection_p1 = int(input("Player 1 "))
+        for i in range():
+            
+
+
+
 
 
     pass
