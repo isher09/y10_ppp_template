@@ -47,6 +47,8 @@ def show_instructions():
 
 board = ""
 def select_ships(board):
+    valid_selection_ships = []
+    print("Player 1 select your ships!():")
     pass
 
 
