@@ -5,6 +5,9 @@
 
 # some more stuff
 
+import __main__
+
+
 print("hello")
 
 # test
