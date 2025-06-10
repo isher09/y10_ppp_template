@@ -67,7 +67,9 @@ def select_ships():
 
 def place_ships(selection, board):
     ''' looks at the selection given by the player e.g. D4.  E7, K1 etc.
-    and places ONE ship boat emoji INSIDE the board array at the correct position'''
+    and places ONE ship boat emoji INSIDE the board array at the correct position
+    
+    example D4 converts to [3][3] and then a emoji is placed at [3][3]'''
 
     ## here is a reminder of how to use arrays
     names = ["Isher", "Ishaan", "Xavier"]
