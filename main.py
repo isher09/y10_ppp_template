@@ -64,7 +64,7 @@ def select_ships():
 
             
            
-
+# the if staement checks the first letter only but what if the column is 10 or more ?
 
                     
 
