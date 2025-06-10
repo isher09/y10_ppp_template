@@ -60,8 +60,8 @@ def select_ships():
                         p1_selection = True
                         return selection_p1
             
-        print("Invalid column! please try again") # should this be repeated?
-        print("Invalid row ! please try again")        
+        print("Invalid column/row please try again") # should this be repeated?
+
             
            
 
