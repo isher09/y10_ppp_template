@@ -72,6 +72,9 @@ def place_ships(p1_selection, board):
     ## here is a reminder of how to use arrays
     names = ["Isher", "Ishaan", "Xavier"]
     names[0] = "Fred"
+    
+
+    # just make sure you're aware board is a 2D list, not a 1D list
 
     return board         
            
@@ -111,9 +114,9 @@ def check_if_hit():
 
 
 def tests():
-    for i in range(1, 4):
-        print("test", i)
-        select_ships()
+    board = initialise_board()
+    coordinate = select_ships()
+    board = place_ships(coordinate, board)
 
 
 if __name__ == "__main__":
