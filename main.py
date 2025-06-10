@@ -49,9 +49,21 @@ board = ""
 def select_ships(board):
     valid_selection_ships = []
     p1_selection = False
+    rows = "ABCDEFGH"
     while p1_selection == False:
         selection_p1 = int(input("Player 1 "))
-        for i in range():
+        for i in range(1, 12):
+            if i == selection_p1[0]:
+                if selection_p1[1] in rows:
+                    if len(selection_p1) == 2:
+                        print(f"You successfully placed a ship at, {selection_p1}")
+                        return selection_p1
+            else:
+                print("Invalid number row ")
+                    
+
+
+
             
 
 
