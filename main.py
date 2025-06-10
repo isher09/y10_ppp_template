@@ -48,22 +48,32 @@ def show_instructions():
 board = ""
 def select_ships():
     valid_selection_ships = []
-    p1_selection = False
+    selection = False
     columns = "ABCDEFGHIJKL"
     
-    while p1_selection == False:
-        selection_p1 = (input("Player 1 place your ships:"))
+    while selection == False:
+        selection = (input("Player 1 place your ships:"))
         for i in range(1, 9):
-            if selection_p1[0] in columns:  
-                if i == int(selection_p1[1]):
+            if selection[0] in columns:  
+                if i == int(selection[1]):
                 
-                    if len(selection_p1) == 2:
-                        print(f"You successfully placed a ship at, {selection_p1}")
+                    if len(selection) == 2:
+                        print(f"You successfully placed a ship at, {selection}")
                         p1_selection = True
-                        return selection_p1
+                        return selection
+                    
         print("Invalid column/row/length of selection  please try again") # should this be repeated?
 
-            
+
+def place_ships(p1_selection, board):
+    ''' looks at the selection given by the player e.g. D4.  E7, K1 etc.
+    and places a ship boat emoji INSIDE the board array at the correct position'''
+
+    ## here is a reminder of how to use arrays
+    names = ["Isher", "Ishaan", "Xavier"]
+    names[0] = "Fred"
+
+    return board         
            
 # the if staement checks the first letter only but what if the column is 10 or more ?
 
@@ -114,6 +124,10 @@ if __name__ == "__main__":
     # display_board(board)
     # board = select_ships(board)
     # winner = False
+
+
+    p1_selection = select_ships()
+    p2_selection = select_ships()
 
     # while winner == False:
     #     # step 1
