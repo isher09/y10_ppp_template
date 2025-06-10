@@ -60,7 +60,7 @@ def select_ships():
                         p1_selection = True
                         return selection_p1
             
-        print("Invalid column/row please try again") # should this be repeated?
+        print("Invalid column/row/length of selection  please try again") # should this be repeated?
 
             
            
