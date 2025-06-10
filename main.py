@@ -54,13 +54,15 @@ def select_ships(board):
         selection_p1 = int(input("Player 1 "))
         for i in range(1, 12):
             if i == selection_p1[0]:
+        
                 if selection_p1[1] in rows:
                     if len(selection_p1) == 2:
                         print(f"You successfully placed a ship at, {selection_p1}")
                         p1_selection = True
                         return selection_p1
-            else:
-                print("Invalid column! please try again")
+            
+        print("Invalid column! please try again") # should this be repeated?
+                
             
            
 
