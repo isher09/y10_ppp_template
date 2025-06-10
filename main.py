@@ -55,7 +55,7 @@ def select_ships():
         selection_p1 = (input("Player 1 place your ships:"))
         for i in range(1, 9):
             if selection_p1[0] in columns:  
-                if i == selection_p1[1]:
+                if i == int(selection_p1[1]):
                 
                     if len(selection_p1) == 2:
                         print(f"You successfully placed a ship at, {selection_p1}")
