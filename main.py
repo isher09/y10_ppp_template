@@ -46,12 +46,12 @@ def show_instructions():
     print("That is all from me so happy battles! ")
 
 board = ""
-def select_ships(board):
+def select_ships():
     valid_selection_ships = []
     p1_selection = False
     rows = "ABCDEFGH"
     while p1_selection == False:
-        selection_p1 = int(input("Player 1 "))
+        selection_p1 = int(input("Player 1  place your ships:"))
         for i in range(1, 12):
             if i == selection_p1[0]:
         
@@ -62,7 +62,7 @@ def select_ships(board):
                         return selection_p1
             
         print("Invalid column! please try again") # should this be repeated?
-                
+        print("Invalid row ! please try again")        
             
            
 
@@ -99,22 +99,30 @@ def display_board(board):
 def check_if_hit():
     pass
 
-if __main__ == "__name__":
+
+def tests():
+    for i in range(1, 4):
+        print("test", i)
+        select_ships()
+
+
+if __name__ == "__main__":
+    tests()
     # setup
-    show_instructions()
-    board = initialise_board()
-    display_board(board)
-    board = select_ships(board)
-    winner = False
+    # show_instructions()
+    # board = initialise_board()
+    # display_board(board)
+    # board = select_ships(board)
+    # winner = False
 
-    while winner == False:
-        # step 1
-        x, y = choose_coordinates(board)
-        # step 2
-        check_if_hit() #     return... hit, sink,
+    # while winner == False:
+    #     # step 1
+    #     x, y = choose_coordinates(board)
+    #     # step 2
+    #     check_if_hit() #     return... hit, sink,
         
-        # step 3
+    #     # step 3
 
-        # step 4
-        winner = check_if_boats_remain(board)
-        print("hello")
+    #     # step 4
+    #     winner = check_if_boats_remain(board)
+    #     print("hello")
