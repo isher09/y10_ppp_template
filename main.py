@@ -65,14 +65,19 @@ def select_ships():
         print("Invalid column/row/length of selection  please try again") # should this be repeated?
 
 
-def place_ships(p1_selection, board):
+def place_ships(selection, board):
     ''' looks at the selection given by the player e.g. D4.  E7, K1 etc.
-    and places a ship boat emoji INSIDE the board array at the correct position'''
+    and places ONE ship boat emoji INSIDE the board array at the correct position'''
 
     ## here is a reminder of how to use arrays
     names = ["Isher", "Ishaan", "Xavier"]
     names[0] = "Fred"
+    Boat_Emoji_p1 = "🚤"
+    Boat_Emoji_p2 = "🛥️"
     
+    # convert the string into integer
+
+    # for example .... convert : D4 into 
 
     # just make sure you're aware board is a 2D list, not a 1D list
 
@@ -115,7 +120,9 @@ def check_if_hit():
 
 def tests():
     board = initialise_board()
+    
     coordinate = select_ships()
+    
     board = place_ships(coordinate, board)
 
 
