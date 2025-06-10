@@ -49,12 +49,14 @@ board = ""
 def select_ships():
     valid_selection_ships = []
     p1_selection = False
-    rows = "ABCDEFGH"
+    columns = "ABCDEFGHIJKL"
+    
     while p1_selection == False:
-        selection_p1 = (input("Player 1  place your ships:"))
-        for i in range(1, 8):
-            if i == selection_p1[0]:
-                if selection_p1[1] in rows:
+        selection_p1 = (input("Player 1 place your ships:"))
+        for i in range(1, 9):
+            if selection_p1[0] in columns:  
+                if i == selection_p1[1]:
+                
                     if len(selection_p1) == 2:
                         print(f"You successfully placed a ship at, {selection_p1}")
                         p1_selection = True
