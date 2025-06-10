@@ -52,7 +52,7 @@ def select_ships():
     rows = "ABCDEFGH"
     while p1_selection == False:
         selection_p1 = (input("Player 1  place your ships:"))
-        for i in range(1, 12):
+        for i in range(1, 8):
             if i == selection_p1[0]:
                 if selection_p1[1] in rows:
                     if len(selection_p1) == 2:
