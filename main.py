@@ -51,7 +51,7 @@ def select_ships():
     p1_selection = False
     rows = "ABCDEFGH"
     while p1_selection == False:
-        selection_p1 = int(input("Player 1  place your ships:"))
+        selection_p1 = (input("Player 1  place your ships:"))
         for i in range(1, 12):
             if i == selection_p1[0]:
         
