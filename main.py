@@ -57,9 +57,14 @@ def select_ships(board):
                 if selection_p1[1] in rows:
                     if len(selection_p1) == 2:
                         print(f"You successfully placed a ship at, {selection_p1}")
+                        p1_selection = True
                         return selection_p1
             else:
-                print("Invalid number row ")
+                print("Invalid column! please try again")
+            
+           
+
+
                     
 
 
