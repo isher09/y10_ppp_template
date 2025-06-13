@@ -64,7 +64,7 @@ def select_ships():
                     
         print("Invalid column/row/length of selection  please try again") # should this be repeated?
 
-#
+#eweeaw
 def place_ships(selection, board):
     ''' looks at the selection given by the player e.g. D4.  E7, K1 etc.
     and places ONE ship boat emoji INSIDE the board array at the correct position
